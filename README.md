@@ -1,5 +1,7 @@
 # Secure Password Generator.NET
 
+![screenshot](http://i.imgur.com/2S2w6bP.png)
+
 ##Description
 _Secure Password Generator.NET_ is an efficient, easy-to-use, password generation utility which allows you to create highly secure passwords that are difficult to crack or guess.
 
