@@ -77,7 +77,7 @@
             this.groupBox1.Location = new System.Drawing.Point(449, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(164, 276);
-            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
             // label2
@@ -98,7 +98,7 @@
             this.lblLinkedIn.Location = new System.Drawing.Point(54, 201);
             this.lblLinkedIn.Name = "lblLinkedIn";
             this.lblLinkedIn.Size = new System.Drawing.Size(56, 13);
-            this.lblLinkedIn.TabIndex = 14;
+            this.lblLinkedIn.TabIndex = 15;
             this.lblLinkedIn.TabStop = true;
             this.lblLinkedIn.Text = "LinkedIn";
             this.lblLinkedIn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblLinkedIn_LinkClicked);
@@ -110,7 +110,7 @@
             this.lblGitHub.Location = new System.Drawing.Point(34, 181);
             this.lblGitHub.Name = "lblGitHub";
             this.lblGitHub.Size = new System.Drawing.Size(97, 13);
-            this.lblGitHub.TabIndex = 13;
+            this.lblGitHub.TabIndex = 14;
             this.lblGitHub.TabStop = true;
             this.lblGitHub.Text = "GitHub/README";
             this.lblGitHub.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblGitHub_LinkClicked);
@@ -227,7 +227,7 @@
             this.txtPassword.BackColor = System.Drawing.Color.White;
             this.txtPassword.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(6, 25);
-            this.txtPassword.MaxLength = 0;
+            this.txtPassword.MaxLength = 40;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(487, 26);
@@ -315,7 +315,7 @@
             this.middleBox.Location = new System.Drawing.Point(11, 82);
             this.middleBox.Name = "middleBox";
             this.middleBox.Size = new System.Drawing.Size(426, 239);
-            this.middleBox.TabIndex = 22;
+            this.middleBox.TabIndex = 3;
             this.middleBox.TabStop = false;
             this.middleBox.Text = "Password Criteria";
             // 
@@ -327,7 +327,7 @@
             this.upperBox.Location = new System.Drawing.Point(11, 12);
             this.upperBox.Name = "upperBox";
             this.upperBox.Size = new System.Drawing.Size(602, 62);
-            this.upperBox.TabIndex = 21;
+            this.upperBox.TabIndex = 0;
             this.upperBox.TabStop = false;
             this.upperBox.Text = "Generated Password";
             // 
@@ -338,7 +338,7 @@
             this.btnExit.Location = new System.Drawing.Point(299, 327);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(138, 31);
-            this.btnExit.TabIndex = 25;
+            this.btnExit.TabIndex = 13;
             this.btnExit.Text = "&Exit Program";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -349,7 +349,7 @@
             this.btnGenerate.Location = new System.Drawing.Point(11, 327);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(138, 31);
-            this.btnGenerate.TabIndex = 23;
+            this.btnGenerate.TabIndex = 11;
             this.btnGenerate.Text = "&Generate Password";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
@@ -360,7 +360,7 @@
             this.btnCopy.Location = new System.Drawing.Point(155, 327);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(138, 31);
-            this.btnCopy.TabIndex = 24;
+            this.btnCopy.TabIndex = 12;
             this.btnCopy.Text = "&Copy to Clipboard";
             this.btnCopy.UseVisualStyleBackColor = true;
             this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
