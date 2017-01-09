@@ -82,6 +82,7 @@
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(6, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 39);
@@ -93,9 +94,10 @@
             // lblLinkedIn
             // 
             this.lblLinkedIn.AutoSize = true;
-            this.lblLinkedIn.Location = new System.Drawing.Point(58, 201);
+            this.lblLinkedIn.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLinkedIn.Location = new System.Drawing.Point(54, 201);
             this.lblLinkedIn.Name = "lblLinkedIn";
-            this.lblLinkedIn.Size = new System.Drawing.Size(48, 13);
+            this.lblLinkedIn.Size = new System.Drawing.Size(56, 13);
             this.lblLinkedIn.TabIndex = 14;
             this.lblLinkedIn.TabStop = true;
             this.lblLinkedIn.Text = "LinkedIn";
@@ -104,9 +106,10 @@
             // lblGitHub
             // 
             this.lblGitHub.AutoSize = true;
-            this.lblGitHub.Location = new System.Drawing.Point(37, 181);
+            this.lblGitHub.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGitHub.Location = new System.Drawing.Point(34, 181);
             this.lblGitHub.Name = "lblGitHub";
-            this.lblGitHub.Size = new System.Drawing.Size(91, 13);
+            this.lblGitHub.Size = new System.Drawing.Size(97, 13);
             this.lblGitHub.TabIndex = 13;
             this.lblGitHub.TabStop = true;
             this.lblGitHub.Text = "GitHub/README";
@@ -115,9 +118,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 148);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(10, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 26);
+            this.label1.Size = new System.Drawing.Size(144, 26);
             this.label1.TabIndex = 14;
             this.label1.Text = "Code by Yazin Yousif\r\nStudent at UC San Diego";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,10 +129,10 @@
             // helpSymbols
             // 
             this.helpSymbols.AutoSize = true;
-            this.helpSymbols.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpSymbols.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpSymbols.Location = new System.Drawing.Point(242, 210);
             this.helpSymbols.Name = "helpSymbols";
-            this.helpSymbols.Size = new System.Drawing.Size(22, 13);
+            this.helpSymbols.Size = new System.Drawing.Size(20, 13);
             this.helpSymbols.TabIndex = 9;
             this.helpSymbols.TabStop = true;
             this.helpSymbols.Text = "(?)";
@@ -139,15 +143,17 @@
             this.checkIncLetters.AutoSize = true;
             this.checkIncLetters.Checked = true;
             this.checkIncLetters.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkIncLetters.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkIncLetters.Location = new System.Drawing.Point(144, 95);
             this.checkIncLetters.Name = "checkIncLetters";
-            this.checkIncLetters.Size = new System.Drawing.Size(96, 17);
+            this.checkIncLetters.Size = new System.Drawing.Size(98, 17);
             this.checkIncLetters.TabIndex = 3;
             this.checkIncLetters.Text = "Include Letters";
             this.checkIncLetters.UseVisualStyleBackColor = true;
             // 
             // lblHint
             // 
+            this.lblHint.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHint.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblHint.Location = new System.Drawing.Point(6, 25);
             this.lblHint.Name = "lblHint";
@@ -160,9 +166,10 @@
             // 
             this.radioMix.AutoSize = true;
             this.radioMix.Checked = true;
+            this.radioMix.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioMix.Location = new System.Drawing.Point(144, 164);
             this.radioMix.Name = "radioMix";
-            this.radioMix.Size = new System.Drawing.Size(138, 17);
+            this.radioMix.Size = new System.Drawing.Size(139, 17);
             this.radioMix.TabIndex = 6;
             this.radioMix.TabStop = true;
             this.radioMix.Text = "Mix of Upper and Lower";
@@ -170,6 +177,7 @@
             // 
             // passwordLength
             // 
+            this.passwordLength.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLength.FormattingEnabled = true;
             this.passwordLength.Items.AddRange(new object[] {
             "4",
@@ -217,7 +225,7 @@
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.White;
-            this.txtPassword.Font = new System.Drawing.Font("Georgia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(6, 25);
             this.txtPassword.MaxLength = 0;
             this.txtPassword.Name = "txtPassword";
@@ -229,6 +237,7 @@
             // radioLower
             // 
             this.radioLower.AutoSize = true;
+            this.radioLower.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioLower.Location = new System.Drawing.Point(144, 141);
             this.radioLower.Name = "radioLower";
             this.radioLower.Size = new System.Drawing.Size(68, 17);
@@ -239,6 +248,7 @@
             // radioUpper
             // 
             this.radioUpper.AutoSize = true;
+            this.radioUpper.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioUpper.Location = new System.Drawing.Point(144, 118);
             this.radioUpper.Name = "radioUpper";
             this.radioUpper.Size = new System.Drawing.Size(68, 17);
@@ -249,6 +259,7 @@
             // checkIncSyms
             // 
             this.checkIncSyms.AutoSize = true;
+            this.checkIncSyms.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkIncSyms.Location = new System.Drawing.Point(144, 209);
             this.checkIncSyms.Name = "checkIncSyms";
             this.checkIncSyms.Size = new System.Drawing.Size(103, 17);
@@ -259,6 +270,7 @@
             // checkIncNums
             // 
             this.checkIncNums.AutoSize = true;
+            this.checkIncNums.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkIncNums.Location = new System.Drawing.Point(144, 186);
             this.checkIncNums.Name = "checkIncNums";
             this.checkIncNums.Size = new System.Drawing.Size(106, 17);
@@ -269,15 +281,16 @@
             // lblLength
             // 
             this.lblLength.AutoSize = true;
+            this.lblLength.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLength.Location = new System.Drawing.Point(6, 76);
             this.lblLength.Name = "lblLength";
-            this.lblLength.Size = new System.Drawing.Size(43, 13);
+            this.lblLength.Size = new System.Drawing.Size(44, 13);
             this.lblLength.TabIndex = 6;
             this.lblLength.Text = "Length:";
             // 
             // btnClear
             // 
-            this.btnClear.Font = new System.Drawing.Font("Georgia", 9.75F);
+            this.btnClear.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(499, 25);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(97, 26);
@@ -298,7 +311,7 @@
             this.middleBox.Controls.Add(this.checkIncNums);
             this.middleBox.Controls.Add(this.lblLength);
             this.middleBox.Controls.Add(this.passwordLength);
-            this.middleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.middleBox.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middleBox.Location = new System.Drawing.Point(11, 82);
             this.middleBox.Name = "middleBox";
             this.middleBox.Size = new System.Drawing.Size(426, 239);
@@ -310,7 +323,7 @@
             // 
             this.upperBox.Controls.Add(this.btnClear);
             this.upperBox.Controls.Add(this.txtPassword);
-            this.upperBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.upperBox.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.upperBox.Location = new System.Drawing.Point(11, 12);
             this.upperBox.Name = "upperBox";
             this.upperBox.Size = new System.Drawing.Size(602, 62);
@@ -321,7 +334,7 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(299, 327);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(138, 31);
@@ -332,7 +345,7 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerate.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerate.Location = new System.Drawing.Point(11, 327);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(138, 31);
@@ -343,7 +356,7 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCopy.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCopy.Location = new System.Drawing.Point(155, 327);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(138, 31);
