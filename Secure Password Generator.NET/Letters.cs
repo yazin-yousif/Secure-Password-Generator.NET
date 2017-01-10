@@ -8,9 +8,9 @@ namespace Secure_Password_Generator
 {
     class Letters
     {
-        public bool include;
-        public bool upper;
-        public bool lower;
+        private bool include;
+        private bool upper;
+        private bool lower;
 
         public Letters(bool include, bool upper, bool lower)
         {
@@ -18,5 +18,21 @@ namespace Secure_Password_Generator
             this.upper = upper;
             this.lower = lower;
         }
+
+        public bool getInclude(){
+            return include;
+        }
+
+        public bool getUpper()
+        {
+            return upper;
+        }
+
+        public bool getLower()
+        {
+            return lower;
+        }
+
+
     }
 }
