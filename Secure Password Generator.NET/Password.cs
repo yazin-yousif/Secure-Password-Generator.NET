@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Secure_Password_Generator
 {
+    /*
+     * This class contains contains all variables and methods required to generate a password
+     * */
     class Password
     {
 
@@ -33,7 +36,10 @@ namespace Secure_Password_Generator
 
         }
 
-
+        /*
+         * This method is responsible for streamlining the password generation process.
+         * When all sub-methods have been executed, generate() returns the generated password.
+         * */
         public string generate()
         {
             String password = "";
@@ -57,6 +63,9 @@ namespace Secure_Password_Generator
 
         }
 
+        /*
+         * This method handles generating the 'letters' portion of the password
+         * */
         private string generateLetters(bool partial)
         {
             String password = "";
@@ -85,7 +94,9 @@ namespace Secure_Password_Generator
             return handleMixCase(password);
         }
 
-
+        /*
+         * This helper method handles the mixed case option.
+         * */
         private string handleMixCase(String password)
         {
             String newPassword = "";
@@ -117,6 +128,9 @@ namespace Secure_Password_Generator
 
         }
 
+        /*
+        * This method handles the 'numbers' portion of the password
+        * */
         private string generateNumbers(string password, bool symbols)
         {
             int passwordLength = password.Length;
@@ -135,6 +149,10 @@ namespace Secure_Password_Generator
 
         }
 
+
+        /*
+        * This method handles the 'symbols' portion of the password
+        * */
         private string generateSymbols(string password)
         {
             int passwordLength = password.Length;

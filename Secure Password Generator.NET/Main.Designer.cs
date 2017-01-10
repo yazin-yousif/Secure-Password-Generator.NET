@@ -143,6 +143,7 @@
             this.checkIncLetters.AutoSize = true;
             this.checkIncLetters.Checked = true;
             this.checkIncLetters.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkIncLetters.Enabled = false;
             this.checkIncLetters.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkIncLetters.Location = new System.Drawing.Point(144, 95);
             this.checkIncLetters.Name = "checkIncLetters";
@@ -150,6 +151,7 @@
             this.checkIncLetters.TabIndex = 3;
             this.checkIncLetters.Text = "Include Letters";
             this.checkIncLetters.UseVisualStyleBackColor = true;
+            this.checkIncLetters.CheckedChanged += new System.EventHandler(this.checkIncLetters_CheckedChanged);
             // 
             // lblHint
             // 
@@ -167,7 +169,7 @@
             this.radioMix.AutoSize = true;
             this.radioMix.Checked = true;
             this.radioMix.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioMix.Location = new System.Drawing.Point(144, 164);
+            this.radioMix.Location = new System.Drawing.Point(161, 164);
             this.radioMix.Name = "radioMix";
             this.radioMix.Size = new System.Drawing.Size(139, 17);
             this.radioMix.TabIndex = 6;
@@ -238,7 +240,7 @@
             // 
             this.radioLower.AutoSize = true;
             this.radioLower.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLower.Location = new System.Drawing.Point(144, 141);
+            this.radioLower.Location = new System.Drawing.Point(161, 141);
             this.radioLower.Name = "radioLower";
             this.radioLower.Size = new System.Drawing.Size(68, 17);
             this.radioLower.TabIndex = 5;
@@ -249,7 +251,7 @@
             // 
             this.radioUpper.AutoSize = true;
             this.radioUpper.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioUpper.Location = new System.Drawing.Point(144, 118);
+            this.radioUpper.Location = new System.Drawing.Point(161, 118);
             this.radioUpper.Name = "radioUpper";
             this.radioUpper.Size = new System.Drawing.Size(68, 17);
             this.radioUpper.TabIndex = 4;
@@ -266,6 +268,7 @@
             this.checkIncSyms.TabIndex = 8;
             this.checkIncSyms.Text = "Include Symbols";
             this.checkIncSyms.UseVisualStyleBackColor = true;
+            this.checkIncSyms.CheckedChanged += new System.EventHandler(this.checkIncSyms_CheckedChanged);
             // 
             // checkIncNums
             // 
@@ -277,6 +280,7 @@
             this.checkIncNums.TabIndex = 7;
             this.checkIncNums.Text = "Include Numbers";
             this.checkIncNums.UseVisualStyleBackColor = true;
+            this.checkIncNums.CheckedChanged += new System.EventHandler(this.checkIncNums_CheckedChanged);
             // 
             // lblLength
             // 

@@ -57,7 +57,12 @@ namespace Secure_Password_Generator
         {
             if (checkIncNums.Checked == false && checkIncSyms.Checked == false)
             {
+                checkIncLetters.Enabled = false;
                 checkIncLetters.Checked = true;
+            }
+            else
+            {
+                checkIncLetters.Enabled = true;
             }
         }
 

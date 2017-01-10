@@ -8,9 +8,9 @@ namespace Secure_Password_Generator
 {
     class Letters
     {
-        public bool include = false;
-        public bool upper = false;
-        public bool lower = false;
+        public bool include;
+        public bool upper;
+        public bool lower;
 
         public Letters(bool include, bool upper, bool lower)
         {
