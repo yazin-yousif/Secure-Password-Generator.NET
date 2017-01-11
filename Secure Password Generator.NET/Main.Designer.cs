@@ -129,10 +129,10 @@
             // helpSymbols
             // 
             this.helpSymbols.AutoSize = true;
-            this.helpSymbols.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpSymbols.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.helpSymbols.Location = new System.Drawing.Point(242, 210);
             this.helpSymbols.Name = "helpSymbols";
-            this.helpSymbols.Size = new System.Drawing.Size(20, 13);
+            this.helpSymbols.Size = new System.Drawing.Size(23, 13);
             this.helpSymbols.TabIndex = 9;
             this.helpSymbols.TabStop = true;
             this.helpSymbols.Text = "(?)";

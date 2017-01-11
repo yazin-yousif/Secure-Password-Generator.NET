@@ -19,16 +19,16 @@ namespace Secure_Password_Generator
             this.lower = lower;
         }
 
-        public bool getInclude(){
+        public bool doInclude(){
             return include;
         }
 
-        public bool getUpper()
+        public bool setUpper()
         {
             return upper;
         }
 
-        public bool getLower()
+        public bool setLower()
         {
             return lower;
         }

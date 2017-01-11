@@ -44,7 +44,7 @@ namespace Secure_Password_Generator
         {
             String password = "";
 
-            if (letters.getInclude())
+            if (letters.doInclude())
             {
                 password = generateLetters(includeSymbols || includeNumbers);
             }
@@ -81,12 +81,12 @@ namespace Secure_Password_Generator
 
             }
 
-            if (letters.getUpper())
+            if (letters.setUpper())
             {
                 return password.ToUpper();
             }
 
-            if (letters.getLower())
+            if (letters.setLower())
             {
                 return password.ToLower();
             }
@@ -148,7 +148,6 @@ namespace Secure_Password_Generator
             return password;
 
         }
-
 
         /*
         * This method handles the 'symbols' portion of the password
