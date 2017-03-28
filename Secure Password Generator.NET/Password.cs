@@ -59,6 +59,7 @@ namespace Secure_Password_Generator
                 password = generateSymbols(password);
             }
 
+            // rearrange the password in a random manner.
             return new string(password.OrderBy(r => rnd.Next()).ToArray());
 
         }
