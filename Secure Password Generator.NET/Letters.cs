@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Secure_Password_Generator
+﻿namespace Secure_Password_Generator
 {
-    struct Letters
+    public struct Letters
     {
         public Letters(bool include, bool upper, bool lower)
         {

@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Secure_Password_Generator
 {
     /*
      * This class contains contains all variables and methods required to generate a password
      * */
-    class Password
+    public class Password
     {
 
         /*
