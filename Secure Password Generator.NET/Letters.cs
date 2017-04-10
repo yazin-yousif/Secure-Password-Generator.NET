@@ -33,6 +33,5 @@ namespace Secure_Password_Generator
             return lower;
         }
 
-
     }
 }
