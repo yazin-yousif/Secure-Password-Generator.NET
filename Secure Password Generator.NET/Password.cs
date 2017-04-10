@@ -20,7 +20,7 @@ namespace Secure_Password_Generator
         private bool includeSymbols = false;
 
         private Letters letters;
-        private Random rnd = new Random();
+        private Random random = new Random();
 
         private char[] arrayLetters = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
         private char[] arraySymbols = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~".ToCharArray();
@@ -37,34 +37,6 @@ namespace Secure_Password_Generator
         }
 
         /*
-         * This method is responsible for streamlining the password generation process.
-         * When all sub-methods have been executed, generate() returns the generated password.
-         * */
-        public string generate()
-        {
-            String password = "";
-
-            if (letters.doInclude())
-            {
-                password = generateLetters(includeSymbols || includeNumbers);
-            }
-
-            if (includeNumbers)
-            {
-                password = generateNumbers(password, includeSymbols);
-            }
-
-            if (includeSymbols)
-            {
-                password = generateSymbols(password);
-            }
-
-            // rearrange the password in a random manner.
-            return new string(password.OrderBy(r => rnd.Next()).ToArray());
-
-        }
-
-        /*
          * This method handles generating the 'letters' portion of the password
          * */
         private string generateLetters(bool partial)
@@ -73,7 +45,7 @@ namespace Secure_Password_Generator
 
             for (int i = 0; i < length; i++)
             {
-                password += arrayLetters[rnd.Next(0, arrayLetters.Length)];
+                password += arrayLetters[random.Next(0, arrayLetters.Length)];
 
                 if (partial)
                 {
@@ -82,12 +54,12 @@ namespace Secure_Password_Generator
 
             }
 
-            if (letters.setUpper())
+            if (letters.Lower)
             {
                 return password.ToUpper();
             }
 
-            if (letters.setLower())
+            if (letters.Upper)
             {
                 return password.ToLower();
             }
@@ -138,7 +110,7 @@ namespace Secure_Password_Generator
 
             for (int i = 0; i < (length - passwordLength); i++)
             {
-                password += arrayNumbers[rnd.Next(0, arrayNumbers.Length)];
+                password += arrayNumbers[random.Next(0, arrayNumbers.Length)];
 
                 if (symbols)
                 {
@@ -159,10 +131,41 @@ namespace Secure_Password_Generator
 
             for (int i = 0; i < (length - passwordLength); i++)
             {
-                password += arraySymbols[rnd.Next(0, arraySymbols.Length)];
+                password += arraySymbols[random.Next(0, arraySymbols.Length)];
             }
 
             return password;
+
+        }
+
+        /*
+         * This method is responsible for streamlining the password generation process.
+         * When all sub-methods have been executed, generate() returns the generated password.
+         * */
+        public string generate()
+        {
+            String password = "";
+
+            if (letters.Include)
+            {
+                // include letters
+                password = generateLetters(includeSymbols || includeNumbers);
+            }
+
+            if (includeNumbers)
+            {
+                // include numbers
+                password = generateNumbers(password, includeSymbols);
+            }
+
+            if (includeSymbols)
+            {
+                // include symbols
+                password = generateSymbols(password);
+            }
+
+            // rearrange the password in a random manner.
+            return new string(password.OrderBy(r => random.Next()).ToArray());
 
         }
 

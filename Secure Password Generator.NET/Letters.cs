@@ -8,29 +8,29 @@ namespace Secure_Password_Generator
 {
     struct Letters
     {
-        private bool include;
-        private bool upper;
-        private bool lower;
-
         public Letters(bool include, bool upper, bool lower)
         {
-            this.include = include;
-            this.upper = upper;
-            this.lower = lower;
+            Include = include;
+            Upper = upper;
+            Lower = lower;
         }
 
-        public bool doInclude(){
-            return include;
-        }
-
-        public bool setUpper()
+        public bool Include
         {
-            return upper;
+            set;
+            get;
         }
 
-        public bool setLower()
+        public bool Upper
         {
-            return lower;
+            set;
+            get;
+        }
+
+        public bool Lower
+        {
+            set;
+            get;
         }
 
     }
