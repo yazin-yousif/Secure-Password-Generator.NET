@@ -12,8 +12,6 @@ namespace Secure_Password_Generator
 {
     public partial class Main : Form
     {
-        Password password;
-        Letters letters;
 
         public Main()
         {
@@ -123,8 +121,8 @@ namespace Secure_Password_Generator
         {
             int length = int.Parse(passwordLength.SelectedItem.ToString());
 
-            letters = new Letters(checkIncLetters.Checked, radioUpper.Checked, radioLower.Checked);
-            password = new Password(length, letters, checkIncNums.Checked, checkIncSyms.Checked);
+            Letters letters = new Letters(checkIncLetters.Checked, radioUpper.Checked, radioLower.Checked);
+            Password password = new Password(length, letters, checkIncNums.Checked, checkIncSyms.Checked);
 
             txtPassword.Text = password.generate();
         }

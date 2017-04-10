@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Secure_Password_Generator
 {
-    class Letters
+    struct Letters
     {
         private bool include;
         private bool upper;
